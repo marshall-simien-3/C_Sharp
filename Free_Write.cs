@@ -16,6 +16,7 @@ using System.Threading.Tasks;
             // 1) Print out line of text.
             Console.WriteLine("1) Hello Marsh!");
             Console.WriteLine("Yo");
+            Console.WriteLine("Whats up");
 
             // Create a string variable
             string testing = "2) This is just a test";
