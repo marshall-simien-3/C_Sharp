@@ -45,6 +45,7 @@ namespace Tutorial
             Employee.Employee1(name, id);   // Outputs employee name & ID function.
             Console.WriteLine("Number of current employees: " + Employee.employeeCounter);  // Outputs employee counter.
             Console.ReadLine();    //Keeps console window up after compiling the code. Waits for an entry of text.
+
         }
     }
 }

@@ -39,21 +39,40 @@ using System.Threading.Tasks;
             Console.Write("4) Enter your name here: ");
             // Stores the line of text entered as a string.
             string name = Console.ReadLine();
-            // Repeat nomenclature for entering age.
-            Console.Write("Enter your age: ");
+            // 5) Repeat nomenclature for entering age.
+            Console.Write("5) Enter your age: ");
             string age = Console.ReadLine();
-            // Printout entered text.
-            Console.WriteLine("Hello " + name + ", you are " + age + " years old!");
+            // 6) Printout entered text.
+            Console.WriteLine("6) Hello " + name + ", you are " + age + " years old!");
 
-            // 5) create an array of inegers.
+            // Create an array of inegers.
             int[] array1 = { 1, 2, 3, 4, 5, 6 };
             array1[1] = 6000;
             //Printout.
             Console.WriteLine(array1[2]);
             Console.WriteLine(array1[1]);
 
+            // 7) Declare & compose 3 strings to output a sentence.
+            var string1 = "Hi";
+            var string2 = ", my name is Marshman!";
+            var string3 = " Whats yours?";
+            Console.WriteLine("7)" + string1 + string2 + string3);
+
+            // 8) Append a string to a Stringbuilder object. 
+            var sb = new StringBuilder();
+            var sb2 = new StringBuilder("Hello man");
+            sb.Append("8) Bighead :)");
+            Console.WriteLine(sb);
+            Console.WriteLine(sb2);
+
+            // 9) String Formatter
+            var nine_city = "Indianapolis"; //string
+            var nine_temperature = 85.6f; //floating point number
+            var nine_date = DateTime.Now; //date & time
+            Console.WriteLine(string.Format("9) Welcome to {0}, the temperature is {1} Deg. F, while the date is {2}.", nine_city, nine_temperature, nine_date));
+
             //Keeps console window up after compiling the code. Waits for an entry of text.
-            Console.ReadLine();  
+            Console.ReadLine();
         }
     }
 } 
