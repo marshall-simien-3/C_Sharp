@@ -70,6 +70,11 @@ using System.Threading.Tasks;
             var nine_temperature = 85.6f; //floating point number
             var nine_date = DateTime.Now; //date & time
             Console.WriteLine(string.Format("9) Welcome to {0}, the temperature is {1} Deg. F, while the date is {2}.", nine_city, nine_temperature, nine_date));
+            
+            // 10) Parsing string into an integer.
+            var nine_int_string = "13";
+            var nine_int1 = int.Parse(nine_int_string);
+            Console.WriteLine("10) " + nine_int1);
 
             //Keeps console window up after compiling the code. Waits for an entry of text.
             Console.ReadLine();
