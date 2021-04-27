@@ -4,14 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tutorial
+namespace Employee_Overview
 {
     //container for Code
     class EmployeeData
     {
+
         // Public class definition for Employee functions.
-        public class Employee
-        { 
+        public class EmployeeInfo
+        {
             public static int employeeCounter; // Define employee incremental counter.
 
             // Function for writing out employee name & ID.
@@ -38,12 +39,12 @@ namespace Tutorial
             Console.Write("Enter the current number of employees: ");
             string n = Console.ReadLine();
 
-            Employee.employeeCounter = Int32.Parse(n);  // Converts string entry to integer 32 bit.
-            Employee.AddEmployee();
+            EmployeeInfo.employeeCounter = Int32.Parse(n);  // Converts string entry to integer 32 bit.
+            EmployeeInfo.AddEmployee();
 
             Console.WriteLine();    // Line break
-            Employee.Employee1(name, id);   // Outputs employee name & ID function.
-            Console.WriteLine("Number of current employees: " + Employee.employeeCounter);  // Outputs employee counter.
+            EmployeeInfo.Employee1(name, id);   // Outputs employee name & ID function.
+            Console.WriteLine("Number of current employees: " + EmployeeInfo.employeeCounter);  // Outputs employee counter.
             Console.ReadLine();    //Keeps console window up after compiling the code. Waits for an entry of text.
 
         }

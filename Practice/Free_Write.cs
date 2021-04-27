@@ -3,20 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Employee_Overview;
 
 // place where code is executed. Within the project "Tutorial" 
- namespace Tutorial
+ namespace Training_C_Sharp
 {
     //container for Code
     class Free_Write
     {
         // Main function for where instructions are placed for computer to execute.
-        static void Main(string[] args)
+        static void Main()
         {
             // 1) Print out line of text.
             Console.WriteLine("1) Hello Marsh!!");
-            Console.WriteLine("Yo");
-            Console.WriteLine("Whats up");
+
+            // Using employee namespace from "EmployeeData". Included at top.
+            EmployeeData.EmployeeInfo.Employee1("Marsh", "1");
 
             // Create a string variable
             string testing = "2) This is just a test";
@@ -76,8 +78,14 @@ using System.Threading.Tasks;
             var nine_int1 = int.Parse(nine_int_string);
             Console.WriteLine("10) " + nine_int1);
 
-            //Keeps console window up after compiling the code. Waits for an entry of text.
-            Console.ReadLine();
+            // 11) Date time example
+            var eleven_birthday = new DateTime(1995, 9, 10); //Create an object for a custom date.
+            var eleven_ageDifference = DateTime.Now - eleven_birthday;
+            Console.WriteLine("11) You are currently " + (eleven_ageDifference.Days / 365) + " Years old");
+            Console.WriteLine("11) " + eleven_birthday.ToLongDateString());    //Change date time to string date format.
+
+           //Keeps console window up after compiling the code. Waits for an entry of text.
+           Console.ReadLine();
         }
     }
 } 
