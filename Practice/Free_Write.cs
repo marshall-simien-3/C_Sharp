@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Employee_Overview;
+using Training_C_Sharp.Classes;
 
 // place where code is executed. Within the project "Tutorial" 
  namespace Training_C_Sharp
@@ -83,6 +84,12 @@ using Employee_Overview;
             var eleven_ageDifference = DateTime.Now - eleven_birthday;
             Console.WriteLine("11) You are currently " + (eleven_ageDifference.Days / 365) + " Years old");
             Console.WriteLine("11) " + eleven_birthday.ToLongDateString());    //Change date time to string date format.
+
+            // 12) Imported from class "Basketball".
+            Basketball mvp = new Basketball(2);
+            Console.WriteLine("12) " + mvp.totalPoints);
+            mvp.fouled();   // Call "fouled()" function.
+            Console.WriteLine("12) " + mvp.totalPoints);
 
            //Keeps console window up after compiling the code. Waits for an entry of text.
            Console.ReadLine();

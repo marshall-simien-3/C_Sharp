@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Training_C_Sharp
+namespace Training_C_Sharp.Classes
 {
     public class Work
     {
