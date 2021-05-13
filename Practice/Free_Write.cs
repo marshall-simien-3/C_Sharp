@@ -9,6 +9,7 @@ using Training_C_Sharp.Classes;
 // place where code is executed. Within the project "Tutorial" 
  namespace Training_C_Sharp
 {
+
     //container for Code
     class Free_Write
     {
@@ -23,15 +24,15 @@ using Training_C_Sharp.Classes;
 
             // Create a string variable
             string testing = "2) This is just a test";
-            
+
             // 2) Print out string variable.
             Console.WriteLine(testing);
-                // Returns a true value if string contains the following phrase.
-                Console.WriteLine(testing.Contains("This"));
-                // Returns the seconds character of the string.
-                Console.WriteLine(testing[1]);
-                // Returns the 4 characters of the string testing starting at index 11. Index includes spaces.
-                Console.WriteLine(testing.Substring(11, 4));
+            // Returns a true value if string contains the following phrase.
+            Console.WriteLine(testing.Contains("This"));
+            // Returns the seconds character of the string.
+            Console.WriteLine(testing[1]);
+            // Returns the 4 characters of the string testing starting at index 11. Index includes spaces.
+            Console.WriteLine(testing.Substring(11, 4));
 
             // 3) Print out a floating point number.
             double test_number = 4.54;
@@ -73,7 +74,7 @@ using Training_C_Sharp.Classes;
             var nine_temperature = 85.6f; //floating point number
             var nine_date = DateTime.Now; //date & time
             Console.WriteLine(string.Format("9) Welcome to {0}, the temperature is {1} Deg. F, while the date is {2}.", nine_city, nine_temperature, nine_date));
-            
+
             // 10) Parsing string into an integer.
             var nine_int_string = "13";
             var nine_int1 = int.Parse(nine_int_string);
@@ -91,8 +92,8 @@ using Training_C_Sharp.Classes;
             mvp.fouled();   // Call "fouled()" function.
             Console.WriteLine("12) " + mvp.totalPoints);
 
-           //Keeps console window up after compiling the code. Waits for an entry of text.
-           Console.ReadLine();
+            //Keeps console window up after compiling the code. Waits for an entry of text.
+            Console.ReadLine();
         }
     }
 } 
