@@ -9,5 +9,17 @@ namespace Training_C_Sharp.Classes
         public string team_colors { get; set; }
         public string team_mascot { get; set; }
         public int team_ranking { get; set; }
+
+        /* An abstract method/function is declared below.
+        Abstract methods allow derived classes to use the same function name, but implement them differently in each darived class. */
+        public abstract int players_of_the_month();
+
+        // Declaring a Virtual method - allows the method defined in the base class to be overwritten later in a derived class.
+        public virtual string best_player(string player_name)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(player_name + " is the best player now.");
+            return sb.ToString();
+        }
     }
 }
