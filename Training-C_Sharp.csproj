@@ -4,7 +4,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Training_C_Sharp</RootNamespace>
-    <StartupObject>Training_C_Sharp.Free_Write</StartupObject>
+    <StartupObject>Training_C_Sharp.Interface_Main</StartupObject>
   </PropertyGroup>
 
 </Project>

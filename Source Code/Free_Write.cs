@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Employee_Overview;
 using Training_C_Sharp.Classes;
 
-// place where code is executed. Within the project "Tutorial" 
+// place where code is executed. Within the project.
  namespace Training_C_Sharp
 {
 
@@ -94,12 +94,12 @@ using Training_C_Sharp.Classes;
 
             // 13) Abstract method imported from derived class "Lakers".
             Lakers thirteen_result = new Lakers();
-            Console.WriteLine(" 13) Total players of the month " + thirteen_result.players_of_the_month());
+            Console.WriteLine("13) Total players of the month " + thirteen_result.players_of_the_month());
 
-            // 14) Virtual method imported from base classs "Teams".
-            Lakers fourteen_result = new Lakers();
-            Console.WriteLine(fourteen_result.best_player("LeBron James"));
-
+            // 14) Virtual method imported from base class "Teams".
+            Lakers fourteen_result_1 = new Lakers();
+            Console.WriteLine("14) " + fourteen_result_1.best_player("LeBron James"));
+             
             //Keeps console window up after compiling the code. Waits for an entry of text.
             Console.ReadLine();
         }

@@ -10,7 +10,7 @@ namespace Training_C_Sharp.Classes
         public string team_mascot { get; set; }
         public int team_ranking { get; set; }
 
-        /* An abstract method/function is declared below.
+        /* An Abstract method/function is declared below.
         Abstract methods allow derived classes to use the same function name, but implement them differently in each darived class. */
         public abstract int players_of_the_month();
 
