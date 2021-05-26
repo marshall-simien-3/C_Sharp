@@ -30,16 +30,16 @@ namespace Training_C_Sharp.Classes.Flow_Control
             switch (color.ToLower())
             {
                 case "black":
-                    string_result = "Your color is black. ";
+                    string_result = "Your color is black.";
                     break;
                 case "blue":
-                    string_result = "Your color is blue. ";
+                    string_result = "Your color is blue.";
                     break;
                 case "red":
-                    string_result = "Your color is red. ";
+                    string_result = "Your color is red.";
                     break;
                 default:
-                    string_result = "You have no color. ";
+                    string_result = "You have no color.";
                     break;
             }
 
@@ -74,7 +74,7 @@ namespace Training_C_Sharp.Classes.Flow_Control
         public void Check_Switch_Statement()
         {
 
-            if ((statement_color_result == "You have no color. ") & (statement_gender_result == "What is your gender?"))
+            if ((statement_color_result == "You have no color.") & (statement_gender_result == "What is your gender?"))
             {
                 Console.Write("Enter your correct color please: ");
                 input_color = Console.ReadLine();
@@ -90,7 +90,7 @@ namespace Training_C_Sharp.Classes.Flow_Control
                 Switch_Statement(statement_color_carryover, input_gender);
             }
 
-            else if (statement_color_result == "You have no color. ")
+            else if (statement_color_result == "You have no color.")
             {
                 Console.Write("Enter your correct color please: ");
                 input_color = Console.ReadLine();
@@ -98,7 +98,7 @@ namespace Training_C_Sharp.Classes.Flow_Control
             }
             else
             {
-                Console.WriteLine(statement_color_result + statement_gender_result);
+                Console.WriteLine($"1) {statement_color_result} {statement_gender_result}\n\r");
             }
 
         }
