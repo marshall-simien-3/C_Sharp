@@ -64,13 +64,14 @@ namespace Training_C_Sharp.Classes.Flow_Control
             statement_color_result = string_result;
             statement_gender_result = string_result_2;
 
-            Check_Statement();
+            // Check the switch statements.
+            Check_Switch_Statement();
         }
 
         /// <summary>
         /// Verifies if the most recent entries are valid. If not, prompt user for entry(s) and call switch statement again.
         /// </summary>
-        public void Check_Statement()
+        public void Check_Switch_Statement()
         {
 
             if ((statement_color_result == "You have no color. ") & (statement_gender_result == "What is your gender?"))
