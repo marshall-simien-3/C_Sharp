@@ -38,6 +38,9 @@ namespace Training_C_Sharp.Classes.Flow_Control
                 case "red":
                     string_result = "Your color is red.";
                     break;
+                case "glitter":
+                    string_result = "Your color is glitter.";
+                    break;
                 default:
                     string_result = "You have no color.";
                     break;
@@ -98,9 +101,51 @@ namespace Training_C_Sharp.Classes.Flow_Control
             }
             else
             {
-                Console.WriteLine($"1) {statement_color_result} {statement_gender_result}\n\r");
+                Console.WriteLine(statement_color_result + " " + statement_gender_result + "\n\r");
             }
 
+        }
+
+        /// <summary>
+        /// Calls the while loop function after user input prompt.
+        /// </summary>
+        public void Init_While_Loop()
+        {
+            Console.Write("3) Enter your starting point: ");
+            int input_starting_point = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter your finishing point: ");
+            int input_finishing_point = int.Parse(Console.ReadLine());
+
+            While_Loop(input_starting_point, input_finishing_point);
+        }
+
+        /// <summary>
+        /// While loop class will iterate through a starting point integer and sum the amount of counts until a reached finishing points.
+        /// It basically results the difference between starting point and finishing point.
+        /// </summary>
+        /// <returns></returns>
+        private void While_Loop(int starting_point, int finishing_point)
+        {
+            if (starting_point <= finishing_point)
+            {
+                int sum = 0;
+                //int counter = 0;
+
+                while (starting_point < finishing_point)
+                {
+                    sum = sum + 1;
+                    starting_point++;
+                    //counter++;
+                }
+                Console.WriteLine($"The difference between starting point & ending point is {sum}.\n\r");
+
+            } else
+
+            {
+                Console.WriteLine("Your finishing point needs to be greater than your starting point.");
+                Init_While_Loop();
+            }
         }
 
     }
