@@ -1,0 +1,6 @@
+For migrating the application & executable published files over to a customer's computer, a couple steps are required:
+
+
+1) Copy all published files along with the .exe file to the customers computer.
+
+2) Make sure the correct .NET runtime version is installed on the customers computer for the .exe to run properly.
