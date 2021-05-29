@@ -26,17 +26,19 @@ namespace Training_C_Sharp
                 {
                     var contents = read.ReadToEnd();  // Read entire text from txt file, and place string into "contents".
                     Console.WriteLine(contents);
+                    var date = DateTime.Now;
+                    logger.Trace($"Text file reading has started on {date}");
                 }
             }
             catch (System.IO.DirectoryNotFoundException ex)
             {
                 Console.WriteLine("Could not find directory.");   // Outputs to cmd console.
-                logger.Error($"The directory could not be found: {ex.Message}");  // Outputs to logger.
+                logger.Error(ex.Message);  // Outputs to logger.
             }
             catch (System.IO.FileNotFoundException ex)
             {
                 Console.WriteLine("Could not locate the file.");
-                logger.Error($"File not found: {ex.Message}");
+                logger.Error(ex.Message);
             }
             catch (Exception ex)
             {
