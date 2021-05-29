@@ -32,11 +32,13 @@ namespace Training_C_Sharp
             }
             Console.WriteLine($"2) sum: {sum}\n\r");
 
-
             // 3) While loop statement.
             var three_while = new Flow_Control();
             three_while.Init_While_Loop();
 
+            // 4) Continue and break statement.
+            var four_continue_break = new Flow_Control();
+            four_continue_break.Continue_Break();
 
             Console.ReadLine();
         }

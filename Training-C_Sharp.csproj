@@ -7,4 +7,9 @@
     <StartupObject>Training_C_Sharp.Flow_Control_Main</StartupObject>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="4.7.10" />
+    <PackageReference Include="NLog.Config" Version="4.7.10" />
+  </ItemGroup>
+
 </Project>

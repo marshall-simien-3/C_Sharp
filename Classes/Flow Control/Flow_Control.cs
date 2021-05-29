@@ -148,5 +148,21 @@ namespace Training_C_Sharp.Classes.Flow_Control
             }
         }
 
+        /// <summary>
+        /// Function for continue & break statements.
+        /// </summary>
+        public void Continue_Break()
+        {
+            var words = new List<string>() { "Marsh", "Baylee", "George", "Heather", "Ben" };
+            foreach (var word in words)
+            {
+                if (word.StartsWith("B")) { continue; }
+                if (word.StartsWith("H")) { break; }
+
+                Console.WriteLine(word);
+
+            }
+        }
+
     }
 }
