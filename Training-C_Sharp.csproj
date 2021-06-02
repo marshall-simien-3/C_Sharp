@@ -4,7 +4,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Training_C_Sharp</RootNamespace>
-    <StartupObject>Training_C_Sharp.Read_Txt_File</StartupObject>
+    <StartupObject>Training_C_Sharp.Parse_Txt_File</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

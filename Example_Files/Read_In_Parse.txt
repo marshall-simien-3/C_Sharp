@@ -1,0 +1,1 @@
+The numbers we will use to parse are : 1.43, 50.34, 35.33, and 44.23.
