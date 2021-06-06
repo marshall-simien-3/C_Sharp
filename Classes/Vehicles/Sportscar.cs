@@ -26,11 +26,12 @@ namespace Training_C_Sharp.Classes.Vehicles
         }
 
         // Constructor for Sportscar
-        public Sportscar (string brand = "No brand", int num_of_wheels = 0, string color = "No color")  // Default values passed in if no parameters are declared when called.
+        public Sportscar (string brand = "No brand", int num_of_wheels = 0, string color = "No color", int speed = 0)  // Default values passed in if no parameters are declared when called.
         {
             this.brand = brand;
             this.color = color;
             this.num_of_wheels = num_of_wheels;
+            this.speed = speed;
         }
     }
 }

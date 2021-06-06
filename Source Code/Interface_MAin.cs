@@ -19,7 +19,7 @@ The interface states the attributes, the classes define the attributes, and the 
         // Main function for where instructions are placed for computer to execute.
         static void Main()
         {
-            Sportscar mustang = new Sportscar("Mustang", 4, "black");
+            Sportscar mustang = new Sportscar("Mustang", 4, "black", 180);
             if (mustang is Sportscar)
             {
                 mustang.move();

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Training_C_Sharp.Classes.Flow_Control
+namespace Training_C_Sharp.Classes.Programming_Concepts
 {
     public class Flow_Control
     {
