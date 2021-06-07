@@ -33,7 +33,7 @@ namespace Training_C_Sharp.Classes.Programming_Concepts
                 Console.WriteLine($"Second string before parse: {numString2} | After int parse: {targetNumDecimal}");
 
                 // Using parse to try an integer with a comma included.
-                targetNumDecimal = int.Parse(numString3);
+                targetNumDecimal = decimal.Parse(numString3);
                 Console.WriteLine($"Third string before parse: {numString3} | After int parse: {targetNumDecimal}");
 
                 // Using parse to try an integer with a comma and decimal included.
