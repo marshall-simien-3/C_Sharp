@@ -13,10 +13,10 @@ namespace Training_C_Sharp.Classes.Arrays_Lists
         /// <summary>
         /// Constructor. Define array size 3.
         /// </summary>
-        public Arrays()
-        {
+        public Arrays() =>
+        
             my_family = new string[3] { "Marsh", "Baylee", "Wolf" };
-        }
+        
 
         /// <summary>
         /// Resizing the array.

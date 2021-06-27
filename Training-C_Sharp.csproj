@@ -4,7 +4,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Training_C_Sharp</RootNamespace>
-    <StartupObject>Training_C_Sharp.Structs_Main</StartupObject>
+    <StartupObject>Training_C_Sharp.Enums_Main</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

@@ -6,6 +6,7 @@ namespace Training_C_Sharp.Classes.Programming_Concepts
 {
     /// <summary>
     /// Structures are value type variables that can encapsulate data and related functionality.
+    /// Structs act similar to classes.
     /// A struct's constructor must have one or more parameters passed in.
     /// </summary>
     public class Structs
