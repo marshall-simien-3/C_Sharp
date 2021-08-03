@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Training-C_Sharp": {
+      "commandName": "Project",
+      "commandLineArgs": "/rootsuffix Exp"
+    }
+  }
+}

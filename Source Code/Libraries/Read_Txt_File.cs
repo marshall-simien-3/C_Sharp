@@ -11,7 +11,7 @@ namespace Training_C_Sharp
 {
 
     //container for Code
-    class Read_Txt_File
+    class Test
     {
 
         // Main function for where instructions are placed for computer to execute.
