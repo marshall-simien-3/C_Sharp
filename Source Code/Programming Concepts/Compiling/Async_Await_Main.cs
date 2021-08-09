@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks; // Used for implementing async tasks.
 using Training_C_Sharp.Classes.Programming_Concepts.Compiling;
 
@@ -68,6 +69,46 @@ namespace Training_C_Sharp
             timeFinish = DateTime.Now;
             Console.WriteLine("Completion Timer: " + (timeFinish - timeStart).ToString());
 
+
+            Task.Delay(2000).Wait(); // Wait 2 sec in between codes.
+            Console.WriteLine("\r\n");
+
+            //Cancel an awaited method prematurely.
+            CancellationTokenSource cancelTask = new CancellationTokenSource();
+            timeStart = DateTime.Now;
+            Console.WriteLine("Cancelled Code:");
+
+            try {
+               
+                // Begin calling all 3 tasks.
+                Task oneCancel = CallingClass.Approaching_Tee("Marshall");
+                Task twoCancel = CallingClass.Stance();
+                Task threeCancel = CallingClass.Swing();
+
+                cancelTask.CancelAfter(3000); // Cancel any tasks after 3 seconds.
+
+                // Begin Awaiting each task.
+                await oneCancel;
+                Console.WriteLine($"{CallingClass.playerName} has walked up to the tee."); //5 sec
+
+                await twoCancel;
+                Console.WriteLine($"{CallingClass.playerName} has a good stance."); // 2 sec
+
+                await threeCancel;
+                Console.WriteLine($"{CallingClass.playerName} has hit the golf ball."); // 6 sec
+            }
+
+            catch (OperationCanceledException)
+            {
+                timeFinish = DateTime.Now;
+                Console.WriteLine("Cancellation Timer. Event cancelled in " + (timeFinish - timeStart).ToString() + "Seconds.");
+            }
+
+            finally
+            {
+                cancelTask.Dispose();
+                Console.WriteLine("Done");
+            }
             Console.ReadLine();
         }
     }
